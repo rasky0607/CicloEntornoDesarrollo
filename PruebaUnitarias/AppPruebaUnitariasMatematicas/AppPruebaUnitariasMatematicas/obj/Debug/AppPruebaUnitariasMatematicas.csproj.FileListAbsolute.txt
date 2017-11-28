@@ -1,0 +1,6 @@
+F:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\PruebaUnitarias\AppPruebaUnitariasMatematicas\AppPruebaUnitariasMatematicas\bin\Debug\AppPruebaUnitariasMatematicas.exe.config
+F:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\PruebaUnitarias\AppPruebaUnitariasMatematicas\AppPruebaUnitariasMatematicas\obj\Debug\AppPruebaUnitariasMatematicas.csprojResolveAssemblyReference.cache
+F:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\PruebaUnitarias\AppPruebaUnitariasMatematicas\AppPruebaUnitariasMatematicas\bin\Debug\AppPruebaUnitariasMatematicas.exe
+F:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\PruebaUnitarias\AppPruebaUnitariasMatematicas\AppPruebaUnitariasMatematicas\bin\Debug\AppPruebaUnitariasMatematicas.pdb
+F:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\PruebaUnitarias\AppPruebaUnitariasMatematicas\AppPruebaUnitariasMatematicas\obj\Debug\AppPruebaUnitariasMatematicas.exe
+F:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\PruebaUnitarias\AppPruebaUnitariasMatematicas\AppPruebaUnitariasMatematicas\obj\Debug\AppPruebaUnitariasMatematicas.pdb

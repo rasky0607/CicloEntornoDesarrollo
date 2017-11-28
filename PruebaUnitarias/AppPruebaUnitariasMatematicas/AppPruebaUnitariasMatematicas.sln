@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPruebaUnitariasMatematicas", "AppPruebaUnitariasMatematicas\AppPruebaUnitariasMatematicas.csproj", "{67E26766-CAD3-463F-AD24-D37D1E05E309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUnitCajaBlancaMatematicasTEST", "PruebaUnitCajaBlancaMatematicasTEST\PruebaUnitCajaBlancaMatematicasTEST.csproj", "{A59725EE-61E6-452E-A2F5-6E5D69626B52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67E26766-CAD3-463F-AD24-D37D1E05E309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E26766-CAD3-463F-AD24-D37D1E05E309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E26766-CAD3-463F-AD24-D37D1E05E309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E26766-CAD3-463F-AD24-D37D1E05E309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59725EE-61E6-452E-A2F5-6E5D69626B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59725EE-61E6-452E-A2F5-6E5D69626B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59725EE-61E6-452E-A2F5-6E5D69626B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59725EE-61E6-452E-A2F5-6E5D69626B52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
