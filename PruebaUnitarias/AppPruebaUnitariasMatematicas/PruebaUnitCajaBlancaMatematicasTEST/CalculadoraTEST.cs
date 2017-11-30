@@ -51,6 +51,7 @@ namespace PruebaUnitCajaBlancaMatematicasTEST
             Calculadora.EsPrimo(valores);//LLamamos al metodo a probar  
         }
 
+        //Camino5
         [TestMethod]//Para cara metodo a probar
         public void C5esPrimo_DOS_TRUE()
         {
@@ -58,7 +59,7 @@ namespace PruebaUnitCajaBlancaMatematicasTEST
             //Assert -> para recoger un dato  que vamos a probar que  no va devolver una excepcion  y si cumple el metodo, en este caso termian el metodo y devuelve un true
             Assert.IsTrue(Calculadora.EsPrimo(valores));//LLamamos al metodo a probar  
         }
-
+        //Camino6
         [TestMethod]//Para cara metodo a probar
         public void C6esPrimo_CUATRO_FALSE()
         {
@@ -67,7 +68,7 @@ namespace PruebaUnitCajaBlancaMatematicasTEST
             Assert.IsFalse(Calculadora.EsPrimo(valores));//LLamamos al metodo a probar  
         }
 
-
+        //Camino7
         [TestMethod]//Para cara metodo a probar
         public void C7esPrimo_TRES_TRUE()
         {
@@ -76,6 +77,17 @@ namespace PruebaUnitCajaBlancaMatematicasTEST
             Assert.IsTrue(Calculadora.EsPrimo(valores));//LLamamos al metodo a probar  
         }
 
+        //Camino8
+        [TestMethod]
+        [ExpectedException(typeof(NumeracoException))]//Excepcion esperada.
+        public void EsPrimo_ValorOVerflow()
+        {
+            Int64 valor = Int32.MaxValue;
+            //uno mas para qeu se desborde con un int de 32 bits
+            valor++;
+            string[] valores ={valor.ToString()};
+            Calculadora.EsPrimo(valores);
+        }
 
         
     }
