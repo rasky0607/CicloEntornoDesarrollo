@@ -101,5 +101,42 @@ namespace AppPruebaUnitariasMatematicas.pbl
             return true;//10
         }//11 Despues de cada excecion no ira al ture.. si n oa  esata llave de finalizacion del metodo.
 
+        //Ejercicio de IBAN
+        public static String CalcularDC(string entrada)
+        {
+            //Nodo 1 (Todas las inicializaciones)
+            string resultado;
+            int[] arrayMultiplicadores = new int[] { 4, 8, 5, 10, 9, 7, 3, 6, 0, 0, 1, 2, 4, 8, 5, 10, 9, 7, 3, 6 };
+            int acumulador1 = 0;
+            int acumulador2 = 0;
+            int resultadoParcial = 0;
+
+            //   Nodo2   Nodo3     Nodo5
+            for (int i = 0; i < 10; i++)
+            {
+                //Nodo4 (las dos instrucciones del bucle)
+                acumulador1 += arrayMultiplicadores[i] * int.Parse(entrada.Substring(i,1));
+                acumulador2 += arrayMultiplicadores[i + 10] * int.Parse(entrada.Substring(i + 10, 1));
+            }
+
+            //Para calcular el primer DC
+            resultadoParcial = 11 - (acumulador1 % 11);
+            //Nodo6
+            if (resultadoParcial == 10)
+                resultado = "1";//Nodo7
+            else
+                resultado = resultadoParcial.ToString();//Nodo8
+            //Para calcular el segundo DC
+            resultadoParcial = 11 - (acumulador2 % 11);
+            if (resultadoParcial == 10)//Nodo9
+                resultado += "1";//Nodo10
+            else
+                resultado += resultadoParcial.ToString();//Nodo11
+
+            
+            return resultado;//Nodo12
+        }
+        //Nodo13
+
     }
 }

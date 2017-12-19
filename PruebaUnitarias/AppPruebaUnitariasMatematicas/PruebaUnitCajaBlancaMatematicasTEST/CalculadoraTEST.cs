@@ -89,6 +89,23 @@ namespace PruebaUnitCajaBlancaMatematicasTEST
             Calculadora.EsPrimo(valores);
         }
 
+        //Pruebas Unitarias del método de calculo de DC
+
+        [TestMethod]
+        public void C1_CalcularDC_12335678000012335678_11()
+        { 
+            string valor = "12335678000012335678";
+            string resultado = Calculadora.CalcularDC(valor);
+            Assert.AreEqual("11", resultado);//AreEqual (Que espero obtener "11" dado una cadena un resultado osea compara lo que devuelve el metodo con lo esperado , si son iguales pasa ,si no no pasa)
+        }
+
+         [TestMethod]//No superada
+        public void C2_CalcularDC_12345678001234567890_06()
+        {
+            string valor = "12335678000012335678";
+            string resultado = Calculadora.CalcularDC(valor);
+            Assert.AreEqual("06", resultado);//AreEqual (Que espero obtener "11" dado una cadena un resultado osea compara lo que devuelve el metodo con lo esperado , si son iguales pasa ,si no no pasa)
+        }
         
     }
 }
