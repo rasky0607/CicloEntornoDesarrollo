@@ -1,0 +1,7 @@
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\catalogo2018consola\catalogo2018consola\bin\Debug\catalogo2018consola.exe.config
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\catalogo2018consola\catalogo2018consola\obj\Debug\catalogo2018consola.csprojResolveAssemblyReference.cache
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\catalogo2018consola\catalogo2018consola\bin\Debug\catalogo2018consola.exe
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\catalogo2018consola\catalogo2018consola\bin\Debug\catalogo2018consola.pdb
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\catalogo2018consola\catalogo2018consola\obj\Debug\catalogo2018consola.exe
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\catalogo2018consola\catalogo2018consola\obj\Debug\catalogo2018consola.pdb
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\catalogo2018consola\catalogo2018consola\bin\Debug\MySql.Data.dll
