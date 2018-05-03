@@ -11,13 +11,13 @@ using System.Data;//para los datatable
 
 namespace catalogo2018consola
 {
-    class DaoMysql:IDAO
+    class DaoMysql : IDAO
     {
         #region conecxion a la BD y desconecxion
-        public  MySqlConnection conexion;
-        public bool Conectar(string srv,string port, string db, string user, string pwd)
-        {           
-            string cadenaConexion = string.Format("server={0};port={1};database={2};uid={3};pwd={4};", srv,port,db,user,pwd);
+        public MySqlConnection conexion;
+        public bool Conectar(string srv, string port, string db, string user, string pwd)
+        {
+            string cadenaConexion = string.Format("server={0};port={1};database={2};uid={3};pwd={4};", srv, port, db, user, pwd);
 
             try
             {
@@ -25,7 +25,7 @@ namespace catalogo2018consola
                 conexion.Open();
                 return true;
             }
-            catch(MySqlException e) 
+            catch (MySqlException e)
             {
                 switch (e.Number)
                 {
@@ -34,7 +34,7 @@ namespace catalogo2018consola
                     default: throw;
                 }
             }
-           
+
         }
 
         public void Desconectar()
@@ -44,8 +44,8 @@ namespace catalogo2018consola
                 conexion.Close();
             }
             catch
-            { 
-            
+            {
+
             }
         }
         #endregion
@@ -57,7 +57,7 @@ namespace catalogo2018consola
                 return conexion.State == ConnectionState.Open;
             else
                 return false;
-            
+
         }
 
         #region Selecionar
@@ -124,24 +124,22 @@ namespace catalogo2018consola
         }
 
         //Procedimiento Almacenados
-        public List<Dvd> SeleccionarPA(string codi, out short resul)//**OJO** resul variable donde voy a recoger el Parametro de salida del PA "out-> por valor y se inicializa en el mismo momento que se crea
-        {            
+        public List<Dvd> SeleccionarPA(string codi, out int resul)//**OJO** resul variable donde voy a recoger el Parametro de salida del PA "out-> por valor y se inicializa en el mismo momento que se crea
+        {
             List<Dvd> resultado = new List<Dvd>();
             MySqlCommand cmd = new MySqlCommand("selectDVD", conexion);//selectDVD nombre del procedimiento almacenado en la BD
             cmd.CommandType = CommandType.StoredProcedure;//indica que el comando "cmd" que queremos lanzar a la BD es un procedimiento almacenado
 
             //Armando el procedimiento almacenado con los parametros que necesita este:
-            if(codi == null)
-            {
-                cmd.Parameters.AddWithValue("@codi", null);//@codigo debe coincidir exactamente con la definicion o el parametro del PA en la llamada
-            }
-            else{
-                cmd.Parameters.AddWithValue("@codi", codi);
-            }
+
+            cmd.Parameters.AddWithValue("@codi", codi);
+            cmd.Parameters["@codi"].Direction = ParameterDirection.Input;//NO hace falta es por defecto
+            
 
             //tipo de parametro:
-            cmd.Parameters.AddWithValue("@result", MySqlDbType.Int16);//Informar del tipo de dato devuelto por la ejecucion del PA
-            cmd.Parameters["@result"].Direction = ParameterDirection.Output;//Indicamos de que tipo es el dato que va recoger el parametro @result (en este caso es un parametro de salida)** cuando  estamos llamando a una funcion usaremos ReturnValue**
+            cmd.Parameters.AddWithValue("@resul", MySqlDbType.Int32);//Informar del tipo de dato devuelto por la ejecucion del PA
+            cmd.Parameters["@resul"].Direction = ParameterDirection.Output;//Indicamos de que tipo es el dato que va recoger el parametro @result (en este caso es un parametro de salida)** cuando  estamos llamando a una funcion usaremos ReturnValue**
+
 
             //Recogemos lso datos del obtenidos del select que recibiremos despues de ejecutar el PA
             MySqlDataReader lector = null;
@@ -151,13 +149,13 @@ namespace catalogo2018consola
                 lector = cmd.ExecuteReader();//recoge y lee los datos de la consulta fila a fila
                 //cmd.ExecuteNonQuery();//cuando la consulta efectuada hacia la BD no es un select( como por ejemplo un update , insert etc..)
                 //cmd.ExecuteScalar();//cuando la consulta efectuada hacia la BD no devuelve una coleccion.o solo cuando recogemos un unico numero
-                resul = Convert.ToInt16(cmd.Parameters["@resul"].Value.ToString());//Recoge el resultado del parametro de salida del PA. <-FALLO AQUI***
+
 
                 while (lector.Read())//Mientras hay algo que leer , recogemos cada uno de los datos en cada uno de los campos.//Cuando devuelva un lectro devuelva  falso o emty set lectura vacia, saldra del bucle
                 {
                     Dvd undvd = new Dvd();
                     //Esto se realiza una vez por cada linea que lee
-                    undvd.Codigo = int.Parse(lector["codigo"].ToString());
+                    undvd.Codigo = short.Parse(lector["codigo"].ToString());
                     undvd.Titulo = lector["titulo"].ToString();
                     undvd.Artista = lector["artista"].ToString();
                     undvd.Pais = lector["pais"].ToString();
@@ -177,12 +175,13 @@ namespace catalogo2018consola
             {
                 if (lector != null)
                     lector.Close();//Cierra el flujo
+                resul = Convert.ToInt32(cmd.Parameters["@resul"].Value.ToString());//Recoge el resultado del parametro de salida del PA. Cuando  halla termiando es cuando se recoge el resultado de salida, SI NO N O FUNCIONA
             }
         }
 
-       
 
-     
+
+
 
         public Pais SeleccionarPais(string iso2)
         {
@@ -194,7 +193,15 @@ namespace catalogo2018consola
         #region Borrado, Actualizacion, insercion
         public int Borrar(string codigo)
         {
-            throw new NotImplementedException();
+            string orden;
+            if (codigo != null)
+            {
+                orden = string.Format("delete from dvd where codigo = '{0}'", codigo);
+                MySqlCommand cmd = new MySqlCommand(orden, conexion);
+                return cmd.ExecuteNonQuery();
+            }
+            else
+                return -1;
         }
 
         public int Actualizar(Dvd unDVD)
@@ -204,7 +211,15 @@ namespace catalogo2018consola
 
         public int Insertar(Dvd unDVD)
         {
-            throw new NotImplementedException();
+            string orden;
+            if (unDVD != null)
+            {
+                orden = string.Format("insert into dvd (codigo,titulo,artista,pais,compania,precio,anio)" + " values ('{0}','{1}','{2}','{3}','{4}',{5},'{6}')", unDVD.Codigo, unDVD.Titulo, unDVD.Artista, unDVD.Pais, unDVD.Compania, unDVD.Precio, unDVD.Anio);
+                MySqlCommand cmd = new MySqlCommand(orden, conexion);
+                return cmd.ExecuteNonQuery();
+            }
+            else
+                return -1;
         }
         #endregion
     }
