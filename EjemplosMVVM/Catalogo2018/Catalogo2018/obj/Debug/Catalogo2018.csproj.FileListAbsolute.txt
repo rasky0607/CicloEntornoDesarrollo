@@ -1,0 +1,68 @@
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.exe.config
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.exe
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.pdb
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csprojResolveAssemblyReference.cache
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\MainWindow.baml
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\MainWindow.g.cs
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\App.g.cs
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018_MarkupCompile.cache
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.g.resources
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.Properties.Resources.resources
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csproj.GenerateResource.Cache
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.exe
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.pdb
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\MySql.Data.dll
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018_MarkupCompile.lref
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.exe.config
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.exe
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.pdb
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\MySql.Data.dll
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csprojResolveAssemblyReference.cache
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\MainWindow.g.cs
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\App.g.cs
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018_MarkupCompile.cache
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018_MarkupCompile.lref
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\MainWindow.baml
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.g.resources
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.Properties.Resources.resources
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csproj.GenerateResource.Cache
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csproj.CoreCompileInputs.cache
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.exe
+H:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.pdb
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\EntityFramework.dll
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\EntityFramework.SqlServer.dll
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.dll
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\EntityFramework.xml
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\EntityFramework.SqlServer.xml
+E:\Archivos Clase\Curso Pablo 17-18\EntornosDeDesarrollo\MVVM o MVC\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.xml
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.exe.config
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.exe
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\Catalogo2018.pdb
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\EntityFramework.dll
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\MySql.Data.dll
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.dll
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\EntityFramework.xml
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.xml
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csprojAssemblyReference.cache
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\MainWindow.g.cs
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\App.g.cs
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018_MarkupCompile.cache
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018_MarkupCompile.lref
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\MainWindow.baml
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.g.resources
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.Properties.Resources.resources
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csproj.GenerateResource.cache
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.csproj.CopyComplete
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.exe
+C:\Users\pablo\Desktop\Catalogo2018\Catalogo2018\obj\Debug\Catalogo2018.pdb

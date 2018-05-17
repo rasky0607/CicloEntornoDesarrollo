@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:local="clr-namespace:Catalogo2018" x:Class="Catalogo2018.MainWindow" 
+        ResizeMode="NoResize"
+        Title="Catálogo de Dvd" Height="369.737" Width="759.211">
+    <Grid>
+        <Grid.DataContext>
+            <local:CatalogoVM/>
+        </Grid.DataContext> <!--Asociar el contexto de datos a el VM--> 
+        <DataGrid HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Height="206" Width="723" ItemsSource="{Binding Listado}" SelectedItem="{Binding DvdSeleccionado}" CanUserAddRows="False"/>
+        <Button x:Name="btnconectar" Content="Conectar" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Width="75" Background="{Binding ColorConectar}" Command="{Binding ConectarBD_click, Mode=OneWay}"/>
+        <Button x:Name="btndesconectar" Content="Desconectar" HorizontalAlignment="Left" Margin="658,229,0,0" VerticalAlignment="Top" Width="75" IsEnabled="{Binding Conectado, Mode=OneWay}" Command="{Binding DesconectarBD_click, Mode=OneWay}"/>
+        <Button x:Name="btnlistar" Content="Listar DVDs" HorizontalAlignment="Left" Margin="148,229,0,0" VerticalAlignment="Top" Width="75" IsEnabled="{Binding Conectado, Mode=OneWay}" Command="{Binding ListarTodosDVD_Click, Mode=OneWay}"/>
+        <Label x:Name="lbestado" Content="{Binding Mensaje}" HorizontalAlignment="Left" Margin="10,297,0,0" VerticalAlignment="Top" Width="666"/>
+        <RadioButton x:Name="rbsql" Content="SQL" HorizontalAlignment="Left" Margin="331,229,0,0" VerticalAlignment="Top" GroupName="bd" IsChecked="{Binding TipoConexion}"/>
+        <RadioButton x:Name="rbsqlite" Content="SqLite" HorizontalAlignment="Left" Margin="474,229,0,0" VerticalAlignment="Top" GroupName="bd"/>
+        <Button Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="10,251,0,0" VerticalAlignment="Top" Width="75" Command="{Binding BorrarDVDBD_click, Mode=OneWay}" IsEnabled="{Binding Conectado, Mode=OneWay}"/>
+        <Button Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="148,256,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.4,0.591" IsEnabled="{Binding Conectado, Mode=OneWay}"/>
+
+    </Grid>
+</Window>
