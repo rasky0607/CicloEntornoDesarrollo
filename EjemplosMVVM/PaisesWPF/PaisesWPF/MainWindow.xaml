@@ -1,0 +1,16 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:PaisesWPF" x:Class="PaisesWPF.MainWindow"
+        Title="listado de Paises" Height="350" Width="525">
+    <Grid>
+        <Grid.DataContext>
+            <local:PaisVM/>
+        </Grid.DataContext>
+        <DataGrid HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="238" Width="458" ItemsSource="{Binding Listado}"/>
+        <Button x:Name="btnConectar" Content="Conectar" HorizontalAlignment="Left" Margin="38,253,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Conectar_Click, Mode=OneWay}"/>
+        <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" Margin="191,253,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Listar_Click, Mode=OneWay}"/>
+        <Label Content="{Binding Mensaje}" HorizontalAlignment="Left" Margin="299,275,0,0" VerticalAlignment="Top" Width="185"/>
+
+    </Grid>
+</Window>
