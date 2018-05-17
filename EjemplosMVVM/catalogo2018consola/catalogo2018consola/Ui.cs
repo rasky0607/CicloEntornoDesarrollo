@@ -35,14 +35,16 @@ namespace catalogo2018consola
             Console.WriteLine("[2]. ¿Hay Conexión?.");
             Console.WriteLine("[3]. Seleccionar toda la tabla.");
             Console.WriteLine("[4]. Seleccionar un codigo de DVD.");
-            Console.WriteLine("[5]. Seleccionar toda la tabla con PA \"procedimiento almacenados\".");          
+            Console.WriteLine("[5]. Seleccionar toda la tabla con PA \"procedimiento almacenados\".");
+            Console.WriteLine("[6] Borrar un dvd de la tabla");
+            Console.WriteLine("[7] Insertar un dvd en la tabla");
             Console.WriteLine("[S]. Salir.");
             Console.Write("Opcion: ");
         }
 
         static void PedirOpcion()
         {
-           
+            bool sipuede = false;
             do
             {
                 Thread.Sleep(1000);
@@ -93,12 +95,13 @@ namespace catalogo2018consola
                     case '4'://seleciona un codigo de DVD
                           List<Dvd> listado2 = new List<Dvd>();
                         listado2 = dao.Seleccionar("1000");
+                        Console.WriteLine();
                         MostrarListado(listado2);
                         Console.ReadLine();//Provisional, para que no limpie la pantalla
                         break;
                     case '5'://selecionar toda la tabla a traves de un procedimiento almacenado
                         List<Dvd> listado3 = new List<Dvd>();
-                        short resultado ;
+                        int resultado ;
                         listado3 = dao.SeleccionarPA(null,out resultado);//out resultado es el parametro de salida obtenido nos informa de si todo fue bien o no, ( o 1 o 0)
                         Console.WriteLine("Resultado filas retornadas: {0}", resultado);
                         if (resultado != 0)//osea si todo ha ido bien
@@ -107,6 +110,38 @@ namespace catalogo2018consola
                             Console.WriteLine("No hay resultado...");
                         Console.ReadLine();//Provisional, para que no limpie la pantalla
                         break;
+                    case '6': //borrar un dvd de la tabla
+                        Console.WriteLine("¿Codigo del DVD a eliminar?");
+                        string codigo = Console.ReadLine();
+                        Console.WriteLine(dao.Borrar(codigo) + " fila/s borrada/s");
+                        break;
+
+                    case '7': //Inserta un dvd en la tabla
+                        Console.WriteLine("¿Codigo del DVD a insertar?");
+                        Dvd elDVD = new Dvd();
+                        elDVD.Codigo = short.Parse(Console.ReadLine());
+                        elDVD.Titulo = "Titulo1";
+                        elDVD.Compania = "compañia1";
+                        elDVD.Anio = "2010";
+                        elDVD.Precio = 10.00;
+                        elDVD.Pais = "US";
+                        elDVD.Artista = "artista1";
+                        Console.WriteLine(dao.Insertar(elDVD) + " fila/s insertada/s");
+                        break;
+                        //Salir
+                    case 's':
+                        sipuede = true;                      
+                        Console.Clear();
+                        Console.WriteLine("\n\t\t\t\t<=======Bye!========>");
+                        Thread.Sleep(800);
+                        break;
+                    case 'S':
+                         sipuede = true;                       
+                        Console.Clear();
+                        Console.WriteLine("\n\t\t\t\t<=======Bye!========>");
+                        Thread.Sleep(800);
+                        break;
+                        //---------//
                     default:
                         break;
                 }
@@ -116,7 +151,7 @@ namespace catalogo2018consola
                 Console.WriteLine("ERROR: " + e.Message);
             }
             #endregion
-            }while(true);
+            }while(!sipuede);
 
         }
 

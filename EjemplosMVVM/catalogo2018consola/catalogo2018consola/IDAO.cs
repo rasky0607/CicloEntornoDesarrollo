@@ -15,7 +15,7 @@ namespace CatalogoDVD_wpf
         void Desconectar();
         bool Conectado();
         //Read
-        List<Dvd> SeleccionarPA(string codi,out short resul);//Seleccionar mediante un procedimiento almacenado
+        List<Dvd> SeleccionarPA(string codi,out int resul);//Seleccionar mediante un procedimiento almacenado
         DataTable SeleccionarTB(string codigo);//seleciona una tabla
         List<Dvd> Seleccionar(string codigo);//Selecionar Dvd
         Pais SeleccionarPais(string iso2);//Selecionar Pais
